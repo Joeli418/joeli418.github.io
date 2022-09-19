@@ -1,0 +1,41 @@
+print("Welcome to PyCafe! Here's the drink menu:\n\n1. Expresso $20\n2. Cappuccino $35\n3. Latte $35\n4. Mocha $35\n5. Americano $30\n\n**30% off discount will be offered to HKUST students. Please input your student ID number during purchasing.")
+# Write code to print out the drinks menu
+
+name = input('What is your name: ')
+sid = input('What is your student ID: ')
+
+# Write code to ask customer to input their name (variable - name) and Student ID (variable - sid)
+# Please put on your own student name and sid as input.
+
+num = input('Please input your choice: ')
+amt = input('How many cuos would you like to order: ')
+
+# Write code to ask customer to input the chosen drink (variable - num) and amount (variable - amt) 
+
+if num == '1':
+    cost = 20*0.7*int(amt)
+elif num == '2':
+    cost = 35*0.7*int(amt)
+elif num == '3':
+    cost = 35*0.7*int(amt)
+elif num == '4':
+    cost = 35*0.7*int(amt)
+elif num == '5':
+    cost = 30*0.7*int(amt)
+else:
+    print('Please input again.')
+
+cost = str(cost)
+
+# Above lines calculate the total cost and save in variable - cost
+# Please do not edit above lines
+
+pid=sid[-4:]
+
+# Set variable pid as pick up ID
+# Please do not edit this line
+
+print("Thank you'+name+'!\nYour SID is'+sid+'.\nThe total cost is:'+cost+'!\nYour pick up ID is+'pid+.")
+
+# Write code to print out the customer's name, SID, total cost & pick up ID
+# And this is the output to be uploaded on Canvas
